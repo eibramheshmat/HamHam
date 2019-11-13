@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01F3B5306FF84D8347AC6878 /* Pods_hamham.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F37C2632883E9DB168E7FF /* Pods_hamham.framework */; };
 		041E248E237CC37E00A95DDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E248D237CC37E00A95DDE /* AppDelegate.swift */; };
 		041E2490237CC37E00A95DDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E248F237CC37E00A95DDE /* SceneDelegate.swift */; };
 		041E2492237CC37E00A95DDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E2491237CC37E00A95DDE /* ViewController.swift */; };
@@ -26,6 +27,9 @@
 		041E2499237CC37F00A95DDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		041E249C237CC37F00A95DDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		041E249E237CC37F00A95DDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E729A315797DC5531F37507 /* Pods-hamham.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hamham.release.xcconfig"; path = "Target Support Files/Pods-hamham/Pods-hamham.release.xcconfig"; sourceTree = "<group>"; };
+		20F37C2632883E9DB168E7FF /* Pods_hamham.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hamham.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2248894C1A3A38DC10142B34 /* Pods-hamham.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hamham.debug.xcconfig"; path = "Target Support Files/Pods-hamham/Pods-hamham.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01F3B5306FF84D8347AC6878 /* Pods_hamham.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				041E248C237CC37E00A95DDE /* hamham */,
 				041E248B237CC37E00A95DDE /* Products */,
+				496FD1CB8E9D1CE3BE49925C /* Pods */,
+				FF1BAE9E263CDCCFB93DF7EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,24 @@
 			path = hamham;
 			sourceTree = "<group>";
 		};
+		496FD1CB8E9D1CE3BE49925C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2248894C1A3A38DC10142B34 /* Pods-hamham.debug.xcconfig */,
+				0E729A315797DC5531F37507 /* Pods-hamham.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FF1BAE9E263CDCCFB93DF7EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20F37C2632883E9DB168E7FF /* Pods_hamham.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 041E24A1237CC37F00A95DDE /* Build configuration list for PBXNativeTarget "hamham" */;
 			buildPhases = (
+				A89404C62B72262D7A09CE0D /* [CP] Check Pods Manifest.lock */,
 				041E2486237CC37E00A95DDE /* Sources */,
 				041E2487237CC37E00A95DDE /* Frameworks */,
 				041E2488237CC37E00A95DDE /* Resources */,
+				B9435E5134615AD8C0E4641E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A89404C62B72262D7A09CE0D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hamham-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9435E5134615AD8C0E4641E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hamham/Pods-hamham-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hamham/Pods-hamham-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hamham/Pods-hamham-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		041E2486237CC37E00A95DDE /* Sources */ = {
@@ -286,6 +355,7 @@
 		};
 		041E24A2237CC37F00A95DDE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2248894C1A3A38DC10142B34 /* Pods-hamham.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +374,7 @@
 		};
 		041E24A3237CC37F00A95DDE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E729A315797DC5531F37507 /* Pods-hamham.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
