@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,10 +11,10 @@
 		041E248E237CC37E00A95DDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E248D237CC37E00A95DDE /* AppDelegate.swift */; };
 		041E2490237CC37E00A95DDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E248F237CC37E00A95DDE /* SceneDelegate.swift */; };
 		041E2492237CC37E00A95DDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E2491237CC37E00A95DDE /* ViewController.swift */; };
-		041E2495237CC37E00A95DDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041E2493237CC37E00A95DDE /* Main.storyboard */; };
 		041E2498237CC37E00A95DDE /* hamham.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 041E2496237CC37E00A95DDE /* hamham.xcdatamodeld */; };
-		041E249A237CC37F00A95DDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041E2499237CC37F00A95DDE /* Assets.xcassets */; };
-		041E249D237CC37F00A95DDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041E249B237CC37F00A95DDE /* LaunchScreen.storyboard */; };
+		041E24A7237CC9D100A95DDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041E24A4237CC9D100A95DDE /* Assets.xcassets */; };
+		041E24A8237CC9D100A95DDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041E24A5237CC9D100A95DDE /* LaunchScreen.storyboard */; };
+		041E24A9237CC9D100A95DDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041E24A6237CC9D100A95DDE /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,11 +22,11 @@
 		041E248D237CC37E00A95DDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		041E248F237CC37E00A95DDE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		041E2491237CC37E00A95DDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		041E2494237CC37E00A95DDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		041E2497237CC37E00A95DDE /* hamham.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = hamham.xcdatamodel; sourceTree = "<group>"; };
-		041E2499237CC37F00A95DDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		041E249C237CC37F00A95DDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		041E249E237CC37F00A95DDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041E24A4237CC9D100A95DDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		041E24A5237CC9D100A95DDE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		041E24A6237CC9D100A95DDE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0E729A315797DC5531F37507 /* Pods-hamham.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hamham.release.xcconfig"; path = "Target Support Files/Pods-hamham/Pods-hamham.release.xcconfig"; sourceTree = "<group>"; };
 		20F37C2632883E9DB168E7FF /* Pods_hamham.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hamham.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2248894C1A3A38DC10142B34 /* Pods-hamham.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hamham.debug.xcconfig"; path = "Target Support Files/Pods-hamham/Pods-hamham.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,11 +68,11 @@
 				041E248D237CC37E00A95DDE /* AppDelegate.swift */,
 				041E248F237CC37E00A95DDE /* SceneDelegate.swift */,
 				041E2491237CC37E00A95DDE /* ViewController.swift */,
-				041E2493237CC37E00A95DDE /* Main.storyboard */,
-				041E2499237CC37F00A95DDE /* Assets.xcassets */,
-				041E249B237CC37F00A95DDE /* LaunchScreen.storyboard */,
 				041E249E237CC37F00A95DDE /* Info.plist */,
 				041E2496237CC37E00A95DDE /* hamham.xcdatamodeld */,
+				041E24A4237CC9D100A95DDE /* Assets.xcassets */,
+				041E24A5237CC9D100A95DDE /* LaunchScreen.storyboard */,
+				041E24A6237CC9D100A95DDE /* Main.storyboard */,
 			);
 			path = hamham;
 			sourceTree = "<group>";
@@ -83,7 +83,6 @@
 				2248894C1A3A38DC10142B34 /* Pods-hamham.debug.xcconfig */,
 				0E729A315797DC5531F37507 /* Pods-hamham.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -155,9 +154,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				041E249D237CC37F00A95DDE /* LaunchScreen.storyboard in Resources */,
-				041E249A237CC37F00A95DDE /* Assets.xcassets in Resources */,
-				041E2495237CC37E00A95DDE /* Main.storyboard in Resources */,
+				041E24A9237CC9D100A95DDE /* Main.storyboard in Resources */,
+				041E24A7237CC9D100A95DDE /* Assets.xcassets in Resources */,
+				041E24A8237CC9D100A95DDE /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,25 +217,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		041E2493237CC37E00A95DDE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				041E2494237CC37E00A95DDE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		041E249B237CC37F00A95DDE /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				041E249C237CC37F00A95DDE /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		041E249F237CC37F00A95DDE /* Debug */ = {
