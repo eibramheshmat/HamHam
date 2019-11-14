@@ -4,7 +4,7 @@
 //
 //  Created by Mina Malak on 6/17/19.
 //  Copyright © 2019 Mina Malak. All rights reserved.
-//
+//  Network class using URLSessionRequest
 
 import UIKit
 
