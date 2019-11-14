@@ -192,3 +192,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         PresenterObject.getRecipeSearchData(RecipeSearchWord: historyUserDefaults[indexPath.row],From: from,To: to)
     }
 }
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
