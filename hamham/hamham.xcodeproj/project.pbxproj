@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046030EE237D89BE00561003 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046030ED237D89BE00561003 /* Extensions.swift */; };
+		046030F1237D974700561003 /* hamham.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 046030EF237D974700561003 /* hamham.xcdatamodeld */; };
 		04650691237C4A9900962CF8 /* tableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04650683237C4A9900962CF8 /* tableCell.xib */; };
 		04650692237C4A9900962CF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04650684237C4A9900962CF8 /* Assets.xcassets */; };
 		04650693237C4A9900962CF8 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04650685237C4A9900962CF8 /* Network.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		046030ED237D89BE00561003 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		046030F0237D974700561003 /* hamham.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = hamham.xcdatamodel; sourceTree = "<group>"; };
 		04650683237C4A9900962CF8 /* tableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tableCell.xib; sourceTree = "<group>"; };
 		04650684237C4A9900962CF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04650685237C4A9900962CF8 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
@@ -73,6 +77,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		046030E5237D891900561003 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0465068D237C4A9900962CF8 /* Constants.swift */,
+				04650685237C4A9900962CF8 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		046030E6237D892500561003 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04650689237C4A9900962CF8 /* RecipeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		046030E7237D893000561003 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				04650688237C4A9900962CF8 /* Presenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		046030E8237D893A00561003 /* PresenterDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				0465068A237C4A9900962CF8 /* PresenterDelegate.swift */,
+			);
+			path = PresenterDelegate;
+			sourceTree = "<group>";
+		};
+		046030E9237D894800561003 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0465068E237C4A9900962CF8 /* collectionCell.swift */,
+				04650690237C4A9900962CF8 /* tableCell.swift */,
+				04650683237C4A9900962CF8 /* tableCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		046030EA237D895300561003 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				046506A6237C5B7E00962CF8 /* ViewController.swift */,
+				0465068F237C4A9900962CF8 /* DetailsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		046030EB237D898400561003 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				046030ED237D89BE00561003 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		046030EC237D899C00561003 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0465068B237C4A9900962CF8 /* LoadingView.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		7E300402600E19B999FF86AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,22 +183,20 @@
 		F5E4E58822B77676003B8C3B /* hamham */ = {
 			isa = PBXGroup;
 			children = (
+				046030E5237D891900561003 /* Network */,
+				046030E8237D893A00561003 /* PresenterDelegate */,
+				046030E7237D893000561003 /* Presenter */,
+				046030E6237D892500561003 /* Model */,
+				046030EA237D895300561003 /* Controller */,
+				046030E9237D894800561003 /* View */,
+				046030EB237D898400561003 /* Extensions */,
+				046030EC237D899C00561003 /* Helper */,
 				F5E4E58922B77676003B8C3B /* AppDelegate.swift */,
+				046506A5237C5B7E00962CF8 /* Main.storyboard */,
+				04650687237C4A9900962CF8 /* LaunchScreen.storyboard */,
 				F5E4E59522B77678003B8C3B /* Info.plist */,
 				04650684237C4A9900962CF8 /* Assets.xcassets */,
-				0465068E237C4A9900962CF8 /* collectionCell.swift */,
-				0465068D237C4A9900962CF8 /* Constants.swift */,
-				0465068F237C4A9900962CF8 /* DetailsViewController.swift */,
-				04650687237C4A9900962CF8 /* LaunchScreen.storyboard */,
-				0465068B237C4A9900962CF8 /* LoadingView.swift */,
-				04650685237C4A9900962CF8 /* Network.swift */,
-				04650688237C4A9900962CF8 /* Presenter.swift */,
-				0465068A237C4A9900962CF8 /* PresenterDelegate.swift */,
-				04650689237C4A9900962CF8 /* RecipeModel.swift */,
-				04650690237C4A9900962CF8 /* tableCell.swift */,
-				04650683237C4A9900962CF8 /* tableCell.xib */,
-				046506A5237C5B7E00962CF8 /* Main.storyboard */,
-				046506A6237C5B7E00962CF8 /* ViewController.swift */,
+				046030EF237D974700561003 /* hamham.xcdatamodeld */,
 			);
 			path = hamham;
 			sourceTree = "<group>";
@@ -251,10 +321,12 @@
 				046506A8237C5B7E00962CF8 /* ViewController.swift in Sources */,
 				04650696237C4A9900962CF8 /* Presenter.swift in Sources */,
 				04650699237C4A9900962CF8 /* LoadingView.swift in Sources */,
+				046030EE237D89BE00561003 /* Extensions.swift in Sources */,
 				F5E4E58A22B77676003B8C3B /* AppDelegate.swift in Sources */,
 				0465069B237C4A9900962CF8 /* Constants.swift in Sources */,
 				0465069D237C4A9900962CF8 /* DetailsViewController.swift in Sources */,
 				0465069E237C4A9900962CF8 /* tableCell.swift in Sources */,
+				046030F1237D974700561003 /* hamham.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +511,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		046030EF237D974700561003 /* hamham.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				046030F0237D974700561003 /* hamham.xcdatamodel */,
+			);
+			currentVersion = 046030F0237D974700561003 /* hamham.xcdatamodel */;
+			path = hamham.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F5E4E57E22B77676003B8C3B /* Project object */;
 }

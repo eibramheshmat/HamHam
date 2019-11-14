@@ -17,6 +17,7 @@ class tableCell: UITableViewCell {
     @IBOutlet weak var mainView: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
+        // edit cell view design
         mainView.layer.cornerRadius = 10
         recipeImage.layer.cornerRadius = 10
         // Initialization code
@@ -24,7 +25,6 @@ class tableCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
     

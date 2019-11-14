@@ -15,7 +15,6 @@ enum HTTPMethod: String{
 }
 
 enum ServiceError: Error {
-    
     case noInternetConnection
     case unauthorizedUser
     case custom(String)
@@ -51,16 +50,13 @@ class Network{
     func makeHttpRequest<T: Decodable>(model: T,method: HTTPMethod, APIName: String, parameters: [String: Any]?, completion: @escaping (Result<T, ServiceError>)->()) {
         
         var request : URLRequest!
-        
-
         if let parameters = parameters {
-            
             switch method{
             case .post, .delete:
                 request = URLRequest(url: URL(string: Constants.baseUrl + APIName)!)
                 request.httpBody = try! JSONSerialization.data(withJSONObject: parameters, options: [])
             case .get:
-//                print(parameters)
+                //                print(parameters)
                 let queryParameters = parameters.queryString
                 request = URLRequest(url: URL(string: Constants.baseUrl + APIName + "?"+queryParameters)!)
             }
@@ -75,7 +71,7 @@ class Network{
             else {
                 let safeUrl = APIName.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed) ?? ""
                 if let url = URL(string: Constants.baseUrl + safeUrl) {
-                request = URLRequest(url: url)
+                    request = URLRequest(url: url)
                 }
             }
         }
@@ -84,8 +80,8 @@ class Network{
         request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             
-//                        let str = String(bytes: data!, encoding: .utf8)
-//                        print(str)
+            //                        let str = String(bytes: data!, encoding: .utf8)
+            //                        print(str)
             
             if let response = response as? HTTPURLResponse{
                 if response.statusCode == 200{
@@ -115,7 +111,7 @@ class Network{
                                     completion(.failure(ServiceError.custom(errorMessage)))
                                 }
                                 else {
-
+                                    
                                     completion(.failure(ServiceError.custom("errpr please try again later")))
                                 }
                             }
@@ -129,19 +125,6 @@ class Network{
             else {
                 completion(.failure(ServiceError.noInternetConnection))
             }
-            }.resume()
+        }.resume()
     }
-}
-extension Dictionary {
-   var queryString: String {
-      var output: String = ""
-      for (key,value) in self {
-        if output == "" {
-          output +=  "\(key)=\(value)"
-        }else{
-          output +=  "&\(key)=\(value)"
-        }
-      }
-      return output
-   }
 }

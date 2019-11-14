@@ -4,7 +4,7 @@
 //
 //  Created by Ibram on 11/11/19.
 //  Copyright © 2019 Ibram. All rights reserved.
-//
+//  model for encode api respones
 
 import UIKit
 struct RecipeModel : Codable {

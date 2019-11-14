@@ -4,7 +4,8 @@
 //
 //  Created by Ibram on 7/25/19.
 //  Copyright © 2019 Ibram. All rights reserved.
-//
+//  constants in app
+
 import UIKit
 class Constants{
     static var app_id = "89193820"
